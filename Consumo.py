@@ -5,5 +5,6 @@ print('=' * 40)
 print('''MENU PRINCIPAL
 [1] selecione um aparelho:
 [2] inserir potncia/ potencia sugerida:
-[3] Horas de uso diaria: ''')
+[3] Horas de uso diaria:
+ Escolha uma opcao:''')
 print('=' * 40)
