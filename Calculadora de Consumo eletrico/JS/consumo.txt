@@ -1,0 +1,4 @@
+Para calcular o consumo de um equipamento elétrico,
+ verifique a potência W (Watts) do mesmo,
+  multiplique esta potência pelo tempo estimado de funcionamento (Horas Por Dia)
+   e divida por 1.000. Desta forma teremos o consumo em kWh do equipamento por dia.
