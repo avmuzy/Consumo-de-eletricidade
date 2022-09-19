@@ -10,52 +10,64 @@
   </head>
   <body>
     <h1>Calculadora de consumo eletrico</h1>
-    <p id="fridge">
-      <input type="checkbox" name="refrigerator" id="refrigerator" />
-      <img src="itens icons/Refrigerator2.webp" alt="" />
-      Hours on
-      <input type="number" name="fridgeUse" id="fridgeUse" min="0" max="24" />
-      Power 300W/ Daily Consumption:
-      <p id="res"></p>
-    </p>
     <p>
-      <input type="checkbox" name="tv" id="tv" />
-      <img src="itens icons/Television-128.webp" alt="" />
-      Hours on
-      <input type="number" name="tvUse" id="tvUse" min="0" max="24" />
-      Power 200W / Daily Consumption:
+      <div>
+        <img src="itens icons/Refrigerator2.webp" alt="" />
+        Hours on
+        <input type="number" name="fridgeUse" id="fridgeUse" min="0" max="24" />
+        Power 300W/ Daily Consumption:
+        <div id="res"></div>
+        <br />
+        <input type="button" value="Calcaular" onclick="calcfridge()" />
+      </div>
+      <div>
+        <input type="checkbox" name="tv" id="tv" />
+        <img src="itens icons/Television-128.webp" alt="" />
+        Hours on
+        <input type="number" name="tvUse" id="tvUse" min="0" max="24" />
+        Power 200W / Daily Consumption:
+      </div>
+      <div>
+        <input type="checkbox" name="airconditioner" id="airconditioner" />
+        <img src="itens icons/air_conditioning.webp" alt="airconditioner" />
+        Hours on
+        <input
+          type="number"
+          name="air_conditioningUse"
+          id="air_conditioningUse"
+          min="0"
+          max="24"
+        />
+        Power 1300W / Daily Consumption:
+      </div>
+      <div>
+        <input type="checkbox" name="microwave" id="microwave" />
+        <img src="itens icons/microwave.webp" alt="" />
+        Hours on
+        <input
+          type="number"
+          name="hoursmicrowave"
+          id="hoursmicrowave"
+          min="0"
+          max="24"
+        />
+        Power 750W / Daily Consumption:
+      </div>
+      <div>
+        <input type="checkbox" name="washingMachine" id="washingMachine" />
+        <img src="itens icons/washinhMachine.webp" alt="" />
+        Hours on
+        <input
+          type="number"
+          name="washingMAchUse"
+          id="washingMAchUse"
+          min="0"
+          max="24"
+        />
+        Power 1000W / Daily Consumption:
+      </div>
     </p>
-    <p>
-      <input type="checkbox" name="airconditioner" id="airconditioner" />
-      <img src="itens icons/air_conditioning.webp" alt="airconditioner" />
-      Hours on
-      <input
-        type="number"
-        name="air_conditioningUse"
-        id="air_conditioningUse"
-        min="0"
-        max="24"
-      />
-      Power 1300W / Daily Consumption:
-    </p>
-    <p>
-      <input type="checkbox" name="microwave" id="microwave" />
-      <img src="itens icons/microwave.webp" alt="" />
-      Hours on
-      <input
-        type="number"
-        name="hoursmicrowave"
-        id="hoursmicrowave"
-        min="0"
-        max="24"
-      />
-      Power 750W / Daily Consumption:
-    </p>
-    <p><input type="checkbox" name="washingMachine" id="washingMachine">
-      <img src="itens icons/washinhMachine.webp" alt="">
-      Hours on
-      <input type="number" name="washingMAchUse" id="washingMAchUse" min="0" max="24">
-      Power 1000W / Daily Consumption:
-    </p>
+
+    <script src="JS/script.js"></script>
   </body>
 </html>
