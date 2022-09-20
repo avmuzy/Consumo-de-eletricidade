@@ -33,3 +33,9 @@ function calcWashM() {
   var res5 = document.getElementById('res5');
   res5.innerHTML = `${result}`;
 }
+function total() {
+  var daily = res1 + res2 + res3 + res4 + res5;
+  var dailyNum = Number(daily.value);
+  var dailyres = document.getElementById('daily');
+  dailyres.innerHTML = `${dailyNum}`;
+}
