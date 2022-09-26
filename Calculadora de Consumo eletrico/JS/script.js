@@ -15,7 +15,9 @@ function calctv() {
 function calcac() {
   var ac = document.getElementById('air_conditioningUse');
   var acNum = Number(ac.value);
-  var result3 = (acNum * 1300) / 1000;
+  var power = document.getElementById('power')
+  var powerNum = Number(power.value)
+  var result3 = (acNum * powerNum) / 1000;
   var res3 = document.getElementById('res3');
   res3.innerHTML = `${result3}`;
 }
