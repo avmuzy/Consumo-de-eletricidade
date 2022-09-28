@@ -15,8 +15,8 @@ function calctv() {
 function calcac() {
   var ac = document.getElementById('air_conditioningUse');
   var acNum = Number(ac.value);
-  var power = document.getElementById('power')
-  var powerNum = Number(power.value)
+  var power = document.getElementById('power');
+  var powerNum = Number(power.value);
   var result3 = (acNum * powerNum) / 1000;
   var res3 = document.getElementById('res3');
   res3.innerHTML = `${result3}`;
@@ -36,7 +36,7 @@ function calcWashM() {
   res5.innerHTML = `${result5}`;
 }
 function total() {
-  var daily = result1 + result2 + result3 + result4 + result5;
+  var daily = res1 + res2 + res3 + res4 + res5;
   var dailyNum = Number(daily.value);
   var dailyres = document.getElementById('daily');
   dailyres.innerHTML = `${dailyNum}`;
