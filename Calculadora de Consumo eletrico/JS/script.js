@@ -35,6 +35,14 @@ function calcWashM() {
   var res5 = document.getElementById('res5');
   res5.innerHTML = `${result5}`;
 }
+function calcShower() {
+  var shower = document.getElementById('shower');
+  var showeNum = Number(shower.value);
+  var result6 = (showeNum * 4400) / 1000;
+  var res6 = document.getElementById('res6');
+  res6.innerHTML = `${result6}`;
+}
+
 function total() {
   var daily = res1 + res2 + res3 + res4 + res5;
   var dailyNum = Number(daily.value);
