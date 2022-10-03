@@ -87,7 +87,11 @@
         <img src="itens_icons/shower.webp" alt="shower">
         Hours on 
         <input type="number" name="shower" id="shower" min="0" max="24">
-        Power 4400 <input type="button" value="Calculate" onclick="calcShower()">
+        Power <select name="showerPower" id="showerPower">
+          <option value="4400">127v</option>
+          <option value="6000">220v</option>
+        </select>
+        <input type="button" value="Calculate" onclick="calcShower()">
         Daily Consumption:
         <span id="res6"></span>
       </div>
