@@ -38,7 +38,9 @@ function calcWashM() {
 function calcShower() {
   var shower = document.getElementById('shower');
   var showeNum = Number(shower.value);
-  var result6 = (showeNum * 4400) / 1000;
+  var showerPower = document.getElementById('showerPower');
+  var powerNum = Number(showerPower.value);
+  var result6 = (showeNum * powerNum) / 1000;
   var res6 = document.getElementById('res6');
   res6.innerHTML = `${result6}`;
 }
