@@ -45,6 +45,14 @@ function calcShower() {
   res6.innerHTML = `${result6}`;
 }
 
+function calcGrill() {
+  let grill = document.getElementById('grill');
+  let grillNum = Number(grill.value);
+  let result7 = (grillNum * 1200) / 1000;
+  let res7 = document.getElementById('res7');
+  res7.innerHTML = `${result7}`;
+}
+
 function total() {
   var daily = res1 + res2 + res3 + res4 + res5;
   var dailyNum = Number(daily.value);
