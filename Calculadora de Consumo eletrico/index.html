@@ -7,115 +7,121 @@
     <link rel="shortcut icon" href="figico2.png" type="image/x-icon" />
     <title>Electricity consumption calculator</title>
     <style>
-      body{
+      body {
         background-color: rgb(153, 153, 218);
       }
-    div{
-      font: bold;
-    }
+      div {
+        font: bold;
+      }
     </style>
   </head>
   <body>
     <h1>Electricity Consumption Calculator</h1>
-    <p>
-      <div>
-        <img src="itens_icons/Refrigerator2.webp" alt="" />
-        Hours on
-        <input type="number" name="fridgeUse" id="fridgeUse" min="0" max="24" />
-        Power 300W <input type="button" value="Calculate" onclick="calcfridge()" /> Daily Consumption: <span id="res1"></span>
-        
-      </div>
+    <p></p>
+    <div>
+      <img src="itens_icons/Refrigerator2.webp" alt="" />
+      Hours on
+      <input type="number" name="fridgeUse" id="fridgeUse" min="0" max="24" />
+      Power 300W
+      <input type="button" value="Calculate" onclick="calcfridge()" /> Daily
+      Consumption: <span id="res1"></span>
+    </div>
 
-      <div>
-        <img src="itens_icons/Television-128.webp" alt="" />
-        Hours on
-        <input type="number" name="tvUse" id="tvUse" min="0" max="24" />
-        Power 200W   <input type="button" value="Calculate" onclick="calctv()"> Daily Consumption: <span id="res2"></span>
-      
-      </div>
+    <div>
+      <img src="itens_icons/Television-128.webp" alt="" />
+      Hours on
+      <input type="number" name="tvUse" id="tvUse" min="0" max="24" />
+      Power 200W
+      <input type="button" value="Calculate" onclick="calctv()" /> Daily
+      Consumption: <span id="res2"></span>
+    </div>
 
-      <div>
-        <img src="itens_icons/air_conditioning.webp" alt="airconditioner" />
-        Hours on
-        <input
-          type="number"
-          name="air_conditioningUse"
-          id="air_conditioningUse"
-          min="0"
-          max="24"
-        />
-        Power <select name="power" id="power">
-          <option value="1300">1300</option>
-          <option value="1400">1400</option>
-          <option value="1600">1600</option>
-          <option value="1900">1900</option>
-          <option value="2600">2600</option>
-          <option value="2800">2800</option>
-          <option value="3600">3600</option>
-        </select> <input type="button" value="Calculate" onclick="calcac()"> Daily Consumption:
-        <span id="res3"></span>
-      </div>
-      <div>
-       
-        <img src="itens_icons/microwave.webp" alt="" />
-        Hours on
-        <input
-          type="number"
-          name="hoursmicrowave"
-          id="hoursmicrowave"
-          min="0"
-          max="24"
-        />
-        Power 750W <input type="button" value="Calculate" onclick="calcMicroWave()"> Daily Consumption:
-        <span id="res4"></span>
-      </div>
+    <div>
+      <img src="itens_icons/air_conditioning.webp" alt="airconditioner" />
+      Hours on
+      <input
+        type="number"
+        name="air_conditioningUse"
+        id="air_conditioningUse"
+        min="0"
+        max="24"
+      />
+      Power
+      <select name="power" id="power">
+        <option value="1300">1300</option>
+        <option value="1400">1400</option>
+        <option value="1600">1600</option>
+        <option value="1900">1900</option>
+        <option value="2600">2600</option>
+        <option value="2800">2800</option>
+        <option value="3600">3600</option>
+      </select>
+      <input type="button" value="Calculate" onclick="calcac()" /> Daily
+      Consumption:
+      <span id="res3"></span>
+    </div>
+    <div>
+      <img src="itens_icons/microwave.webp" alt="" />
+      Hours on
+      <input
+        type="number"
+        name="hoursmicrowave"
+        id="hoursmicrowave"
+        min="0"
+        max="24"
+      />
+      Power 750W
+      <input type="button" value="Calculate" onclick="calcMicroWave()" /> Daily
+      Consumption:
+      <span id="res4"></span>
+    </div>
 
-      <div>
-        <img src="itens_icons/washinhMachine.webp" alt="" />
-        Hours on
-        <input
-          type="number"
-          name="washingMAchUse"
-          id="washingMAchUse"
-          min="0"
-          max="24"
-        />
-        Power 1000W <input type="button" value="Calculate" onclick="calcWashM()"> Daily Consumption:
-        <span id="res5"></span>
-      </div>
-      <div>
-        <img src="itens_icons/shower.webp" alt="shower">
-        Hours on 
-        <input type="number" name="shower" id="shower" min="0" max="24">
-        Power <select name="showerPower" id="showerPower">
-          <option value="4400">127v</option>
-          <option value="6000">220v</option>
-        </select>
-        <input type="button" value="Calculate" onclick="calcShower()">
-        Daily Consumption:
-        <span id="res6"></span>
-      </div>
+    <div>
+      <img src="itens_icons/washinhMachine.webp" alt="" />
+      Hours on
+      <input
+        type="number"
+        name="washingMAchUse"
+        id="washingMAchUse"
+        min="0"
+        max="24"
+      />
+      Power 1000W
+      <input type="button" value="Calculate" onclick="calcWashM()" /> Daily
+      Consumption:
+      <span id="res5"></span>
+    </div>
+    <div>
+      <img src="itens_icons/shower.webp" alt="shower" />
+      Hours on
+      <input type="number" name="shower" id="shower" min="0" max="24" />
+      Power
+      <select name="showerPower" id="showerPower">
+        <option value="4400">127v</option>
+        <option value="6000">220v</option>
+      </select>
+      <input type="button" value="Calculate" onclick="calcShower()" />
+      Daily Consumption:
+      <span id="res6"></span>
+    </div>
 
-      <div>
-        <img src="itens_icons/grill-128.webp" alt="grill">
-        Hours on
-        <input type="number" name="grill" id="grill" min="0" max="24">
-        Power 1200W
-        <input type="button" value="Calculate" onclick="calcGrill()">
-        Daily Consumption:
-        <span id="res7"></span>
-        
+    <div>
+      <img src="itens_icons/grill-128.webp" alt="grill" />
+      Hours on
+      <input type="number" name="grill" id="grill" min="0" max="24" />
+      Power 1200W
+      <input type="button" value="Calculate" onclick="calcGrill()" />
+      Daily Consumption:
+      <span id="res7"></span>
+    </div>
 
-      </div>
-    
-    <p>Daily total:<div id="daily"></div></p>
-    
-      <p>Monthly total:
-        <div id="monthly"></div>
-      </p>
-      
-      <input type="button" value="Calculate" onclick="total()">
-    
+    <p>Daily total:</p>
+    <div id="daily"></div>
+
+    <p>Monthly total:</p>
+    <div id="monthly"></div>
+
+    <input type="button" value="Calculate" onclick="total()" />
 
     <script src="JS/script.js"></script>
   </body>

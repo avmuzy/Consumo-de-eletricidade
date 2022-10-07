@@ -1,3 +1,9 @@
+var result1 = 0;
+var result2 = 0;
+var result3 = 0;
+var result4 = 0;
+var result5 = 0;
+
 function calcfridge() {
   var fridgeuse = document.getElementById('fridgeUse');
   var fridgNum = Number(fridgeuse.value);
@@ -54,8 +60,8 @@ function calcGrill() {
 }
 
 function total() {
-  var daily = res1 + res2 + res3 + res4 + res5;
-  var dailyNum = Number(daily.value);
+  var daily = result1 + result2 + result3 + result4 + result5;
+  var dailyNum = Number(daily.valueOf);
   var dailyres = document.getElementById('daily');
   dailyres.innerHTML = `${dailyNum}`;
 }
