@@ -60,8 +60,8 @@ function calcGrill() {
 }
 
 function total() {
-  var daily = result1 + result2 + result3 + result4 + result5;
+  var daily = result1.valueOf;
   var dailyNum = Number(daily.valueOf);
   var dailyres = document.getElementById('daily');
-  dailyres.innerHTML = `${dailyNum}`;
+  dailyres.innerHTML = `${daily}`;
 }

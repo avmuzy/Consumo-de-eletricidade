@@ -15,25 +15,21 @@
       }
     </style>
   </head>
-  <body>
+  <body onchange="calc()">
     <h1>Electricity Consumption Calculator</h1>
     <p></p>
     <div>
       <img src="itens_icons/Refrigerator2.webp" alt="" />
       Hours on
       <input type="number" name="fridgeUse" id="fridgeUse" min="0" max="24" />
-      Power 300W
-      <input type="button" value="Calculate" onclick="calcfridge()" /> Daily
-      Consumption: <span id="res1"></span>
+      Power 300W Consumption: <span id="res1"></span>
     </div>
 
     <div>
       <img src="itens_icons/Television-128.webp" alt="" />
       Hours on
       <input type="number" name="tvUse" id="tvUse" min="0" max="24" />
-      Power 200W
-      <input type="button" value="Calculate" onclick="calctv()" /> Daily
-      Consumption: <span id="res2"></span>
+      Power 200W Consumption: <span id="res2"></span>
     </div>
 
     <div>
@@ -56,7 +52,6 @@
         <option value="2800">2800</option>
         <option value="3600">3600</option>
       </select>
-      <input type="button" value="Calculate" onclick="calcac()" /> Daily
       Consumption:
       <span id="res3"></span>
     </div>
@@ -70,9 +65,7 @@
         min="0"
         max="24"
       />
-      Power 750W
-      <input type="button" value="Calculate" onclick="calcMicroWave()" /> Daily
-      Consumption:
+      Power 750W Consumption:
       <span id="res4"></span>
     </div>
 
@@ -86,9 +79,7 @@
         min="0"
         max="24"
       />
-      Power 1000W
-      <input type="button" value="Calculate" onclick="calcWashM()" /> Daily
-      Consumption:
+      Power 1000W Consumption:
       <span id="res5"></span>
     </div>
     <div>
@@ -100,7 +91,6 @@
         <option value="4400">127v</option>
         <option value="6000">220v</option>
       </select>
-      <input type="button" value="Calculate" onclick="calcShower()" />
       Daily Consumption:
       <span id="res6"></span>
     </div>
@@ -109,9 +99,7 @@
       <img src="itens_icons/grill-128.webp" alt="grill" />
       Hours on
       <input type="number" name="grill" id="grill" min="0" max="24" />
-      Power 1200W
-      <input type="button" value="Calculate" onclick="calcGrill()" />
-      Daily Consumption:
+      Power 1200W Daily Consumption:
       <span id="res7"></span>
     </div>
 
@@ -120,8 +108,6 @@
 
     <p>Monthly total:</p>
     <div id="monthly"></div>
-
-    <input type="button" value="Calculate" onclick="total()" />
 
     <script src="JS/script.js"></script>
   </body>
