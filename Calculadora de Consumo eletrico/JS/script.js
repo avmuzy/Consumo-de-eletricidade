@@ -44,4 +44,13 @@ function calc() {
   let result7 = (grillNum * 1200) / 1000;
   let res7 = document.getElementById('res7');
   res7.innerHTML = `${result7}`;
+
+  let daily =
+    result1 + result2 + result3 + result4 + result5 + result6 + result7;
+  let dailyres = document.querySelector('div#daily');
+  dailyres.innerHTML = `Total daily: ${daily}`;
+
+  let monthly = daily * 30;
+  let monthlyres = document.querySelector('div#monthly');
+  monthlyres.innerHTML = `Total monthly (30days): ${monthly}`;
 }
