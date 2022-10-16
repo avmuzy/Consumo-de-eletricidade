@@ -53,4 +53,17 @@ function calc() {
   let monthly = daily * 30;
   let monthlyres = document.querySelector('div#monthly');
   monthlyres.innerHTML = `Total monthly (30days): ${monthly}`;
+  let consumption = [
+    result1,
+    result2,
+    result3,
+    result4,
+    result5,
+    result6,
+    result7,
+  ];
+  let hightCons = consumption[6];
+  let lowCons = consumption[0];
+  let resConsumo = document.querySelector('div#consumption');
+  resConsumo.innerHTML = `The highest consumption was: ${hightCons} and the lower was: ${lowCons}`;
 }
