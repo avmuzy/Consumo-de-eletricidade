@@ -62,8 +62,9 @@ function calc() {
     result6,
     result7,
   ];
-  let hightCons = consumption[6];
-  let lowCons = consumption[0];
+
+  let hightCons = consumption[5];
+  let lowCons = consumption[1];
   let resConsumption = document.querySelector('div#consumption');
   resConsumption.innerHTML = `The highest consumption was: ${hightCons} and the lower was: ${lowCons} and the average was ${
     daily / 7
