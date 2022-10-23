@@ -45,8 +45,21 @@ function calc() {
   let res7 = document.getElementById('res7');
   res7.innerHTML = `${result7}`;
 
+  let hairdryer = document.getElementById('hairdryer');
+  let hairdryerNum = Number(hairdryer.value);
+  let result8 = (hairdryerNum * 750) / 1000;
+  let res8 = document.getElementById('res8');
+  res8.innerHTML = `${result8}`;
+
   let daily =
-    result1 + result2 + result3 + result4 + result5 + result6 + result7;
+    result1 +
+    result2 +
+    result3 +
+    result4 +
+    result5 +
+    result6 +
+    result7 +
+    result8;
   let dailyres = document.querySelector('div#daily');
   dailyres.innerHTML = `Total daily: ${daily}`;
 
